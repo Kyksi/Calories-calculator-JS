@@ -1,0 +1,84 @@
+body{
+	background-image: url(111.jpg);
+	background-size: 110%;
+    background-attachment: fixed;
+}
+ul.first_list li, ul.second_list li, ul.third_list li, ul.four_list li, ul.five_list li {
+padding: 6px 9px;
+list-style-type: none;
+border-top: 1px solid #efefef;
+text-align: center;
+}
+
+body{
+}
+
+table, th, td {
+	background-color: rgba(214, 214, 194, 0.5);
+	padding: 10px;
+	margin-top: 70px;
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+}
+th {
+	width: 210px;
+    text-align: left;
+}
+#blue{
+	background-color: rgba(235, 235, 224, 0.7);
+	font-weight: bold;
+}    
+#massakonc, #kalkonc, #massa1, #massa2, #massa3, #massa4, #massa5 {
+	font-weight: bold;
+}
+li{
+	cursor:pointer;
+}
+li:hover{
+	color: red;
+	font-weight: bold;
+}
+.first, .second, .third, .four, .five{
+
+	cursor:pointer;
+	font-weight: bold;
+}
+.first:hover, .second:hover, .third:hover, .four:hover, .five:hover{
+	color: red;
+}
+input{
+	width:100px;
+	text-align:right;
+}
+ul{
+    height: 200px; 
+    padding: 0 5px;
+    overflow-x: auto;
+}
+#puste{
+	border-style: none;
+}
+#button{
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+#gl{
+	text-align: left;
+	font-weight: bold;
+	color: blue;
+	font-size:19px;
+}
+#load{
+	margin-top: 35px;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	margin-right: 100px;
+	text-align: right;
+}
+#load:hover{
+	color: red;
+}

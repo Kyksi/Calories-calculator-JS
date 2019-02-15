@@ -1,0 +1,379 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Przelicznik kalorii</title>
+<link rel="stylesheet" href="CSS.css">
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="JS.js"></script>
+<meta name="author" content="Nazar Semeniuk">
+</head>
+<body>
+
+<table align = "center">
+<tr>
+    <th>Nazwa produktu</th>
+    <th>Ilość kalorii na kg</th> 
+	<th>Massa v gr</th>
+	<th>kkal</th>
+  </tr>
+  <tr>
+    <td><div class="first"><div id="btn"> </div><a>1. </a><span id="prod1">Wybierz z listy ↓</span></div>
+
+<ul class="first_list">
+<a id="gl">Owocy: <img src="http://zoozel.ru/gallery/images/511784_frukty-ovoschi-png.jpg" width="40"><a>
+<li alt="470">Morele</li>
+<li alt="440">Ananas</li>
+<li alt="450">Pomarańcza</li>
+<li alt="700">Winogrona</li>
+<li alt="250">Wiśnia</li>
+<li alt="300">Cytryna</li>
+<li alt="450">Jabłka</li>
+<a id="gl">Warzywa: <img src="http://вздоровье.рф/wp-content/uploads/2016/04/vegetables-pic.jpg" width="40"> </a>
+<li alt="200">Kapusta</li>
+<li alt="600">Ziemniaki</li>
+<li alt="430">Cebula</li>
+<li alt="330">Marchew</li>
+<li alt="150">Ogórki</li>
+<li alt="200">Pomidory</li>
+<li alt="250">Rzodkiewka</li>
+<li alt="400">Burak</li>
+<a id="gl">Chleb: <img src="http://hochukakdoma.com/uploads/product/100/170/4be991e6c1f32bd79d6359ffdfb22eae.jpg" width="40"></a>
+<li alt="2650">Chleb pszenny</li>
+<li alt="2100">Chleb żytni</li>
+<li alt="3000">Рieczywo</li>
+<a id="gl">Mięso i drób:  <img src="http://sensation-white.ru/wp-content/uploads/2016/10/22ae25e7f945b271e58a95b811d15ea8.jpg" width="40"></a>
+<li alt="3160">Jagnięcina</li>
+<li alt="3650">Szynka</li>
+<li alt="1800">Wołowina</li>
+<li alt="3000">Gęś</li>
+<li alt="1500">Indyk</li>
+<li alt="1150">Króliki</li>
+<li alt="1900">Kurczak</li>
+<li alt="3100">Wieprzowina</li>
+<li alt="4000">Kaczka</li>
+<a id="gl">Prod mleczne: <img src="http://ypitan.ru/wp-content/uploads/2016/03/dairy.jpg" width="40"> </a>
+<li alt="510">Jogurt (1.5%)</li>
+<li alt="470">Kefir (1.5%)</li>
+<li alt="600">Mleko (3%)</li>
+<li alt="1150">Śmietana (10%)</li>
+<li alt="2100">Śmietana (20%)</li>
+<li alt="3700">Ser twardy</li>
+<li alt="2260">Twaróg (18%)</li>
+<li alt="1570">Jajko kurze</li>
+<a id="gl">Ryby: <img src="http://static.wixstatic.com/media/7371c9_28a6d531e5c345768e3b89a108eff90b.jpg_srz_896_320_85_22_0.50_1.20_0.00_jpg_srz" width="60"> </a>
+<li alt="2400">Kawior ziarnisty</li>
+<li alt="750">Kalmar</li>
+<li alt="850">Krewetki</li>
+<li alt="1450">Karp</li>
+<li alt="800">Сzarniak</li>
+<li alt="950">Okoń</li>
+<li alt="160">Kapusta morska</li>
+<a id="gl">Кrupy: <img src="http://modelform.ru/wp-content/uploads/2016/06/kachestvo-krupy.jpg" width="60"> </a>
+<li alt="3400">Mąka</li>
+<li alt="3460">Kasza gryczana</li>
+<li alt="3400">Kasza manna</li>
+<li alt="3740">Kasza owsiana</li>
+<li alt="3420">Kasza jęczmienna</li>
+<li alt="3520">Kasza pszenna</li>
+<li alt="3430">Kasza pęczak</li>
+<li alt="3690">Płatki kukurydziane</li>
+<li alt="3500">Makarony</li>
+<li alt="0">Ryż</li>
+</ul></div></td>
+    <td id="blue"><div id="kal1" class="first_text">0</div>
+</div></td>
+    <td id="blue"><input type="text" id="massa1" width="100" onkeyup="checkCurr(this)" ></td> 
+	<td id="blue"><a id="cal1"> </a></td>
+  </tr>
+  
+  <tr>
+    <td><div class="second"><div id="btn"> </div><a>2. </a><span id="prod2">Wybierz z listy ↓</span></div>
+
+<ul class="second_list">
+<a id="gl">Owocy: <img src="http://zoozel.ru/gallery/images/511784_frukty-ovoschi-png.jpg" width="40"><a>
+<li alt="470">Morele</li>
+<li alt="440">Ananas</li>
+<li alt="450">Pomarańcza</li>
+<li alt="700">Winogrona</li>
+<li alt="250">Wiśnia</li>
+<li alt="300">Cytryna</li>
+<li alt="450">Jabłka</li>
+<a id="gl">Warzywa: <img src="http://вздоровье.рф/wp-content/uploads/2016/04/vegetables-pic.jpg" width="40"> </a>
+<li alt="200">Kapusta</li>
+<li alt="600">Ziemniaki</li>
+<li alt="430">Cebula</li>
+<li alt="330">Marchew</li>
+<li alt="150">Ogórki</li>
+<li alt="200">Pomidory</li>
+<li alt="250">Rzodkiewka</li>
+<li alt="400">Burak</li>
+<a id="gl">Chleb: <img src="http://hochukakdoma.com/uploads/product/100/170/4be991e6c1f32bd79d6359ffdfb22eae.jpg" width="40"></a>
+<li alt="2650">Chleb pszenny</li>
+<li alt="2100">Chleb żytni</li>
+<li alt="3000">Рieczywo</li>
+<a id="gl">Mięso i drób:  <img src="http://sensation-white.ru/wp-content/uploads/2016/10/22ae25e7f945b271e58a95b811d15ea8.jpg" width="40"></a>
+<li alt="3160">Jagnięcina</li>
+<li alt="3650">Szynka</li>
+<li alt="1800">Wołowina</li>
+<li alt="3000">Gęś</li>
+<li alt="1500">Indyk</li>
+<li alt="1150">Króliki</li>
+<li alt="1900">Kurczak</li>
+<li alt="3100">Wieprzowina</li>
+<li alt="4000">Kaczka</li>
+<a id="gl">Prod mleczne: <img src="http://ypitan.ru/wp-content/uploads/2016/03/dairy.jpg" width="40"> </a>
+<li alt="510">Jogurt (1.5%)</li>
+<li alt="470">Kefir (1.5%)</li>
+<li alt="600">Mleko (3%)</li>
+<li alt="1150">Śmietana (10%)</li>
+<li alt="2100">Śmietana (20%)</li>
+<li alt="3700">Ser twardy</li>
+<li alt="2260">Twaróg (18%)</li>
+<li alt="1570">Jajko kurze</li>
+<a id="gl">Ryby: <img src="http://static.wixstatic.com/media/7371c9_28a6d531e5c345768e3b89a108eff90b.jpg_srz_896_320_85_22_0.50_1.20_0.00_jpg_srz" width="60"> </a>
+<li alt="2400">Kawior ziarnisty</li>
+<li alt="750">Kalmar</li>
+<li alt="850">Krewetki</li>
+<li alt="1450">Karp</li>
+<li alt="800">Сzarniak</li>
+<li alt="950">Okoń</li>
+<li alt="160">Kapusta morska</li>
+<a id="gl">Кrupy: <img src="http://modelform.ru/wp-content/uploads/2016/06/kachestvo-krupy.jpg" width="60"> </a>
+<li alt="3400">Mąka</li>
+<li alt="3460">Kasza gryczana</li>
+<li alt="3400">Kasza manna</li>
+<li alt="3740">Kasza owsiana</li>
+<li alt="3420">Kasza jęczmienna</li>
+<li alt="3520">Kasza pszenna</li>
+<li alt="3430">Kasza pęczak</li>
+<li alt="3690">Płatki kukurydziane</li>
+<li alt="3500">Makarony</li>
+<li alt="0">Ryż</li>
+</ul></div></td>
+    <td id="blue"><div id="kal2" class="second_text">0</div>
+</div></td>
+    <td id="blue"><input type="text" id="massa2" width="100" onkeyup="checkCurr(this)" ></td> 
+	<td id="blue"><a id="cal2"> </a></td>
+  </tr>
+   <tr>
+    <td><div class="third"><div id="btn"> </div><a>3. </a><span id="prod3">Wybierz z listy ↓</span></div>
+
+<ul class="third_list">
+<a id="gl">Owocy: <img src="http://zoozel.ru/gallery/images/511784_frukty-ovoschi-png.jpg" width="40"><a>
+<li alt="470">Morele</li>
+<li alt="440">Ananas</li>
+<li alt="450">Pomarańcza</li>
+<li alt="700">Winogrona</li>
+<li alt="250">Wiśnia</li>
+<li alt="300">Cytryna</li>
+<li alt="450">Jabłka</li>
+<a id="gl">Warzywa: <img src="http://вздоровье.рф/wp-content/uploads/2016/04/vegetables-pic.jpg" width="40"> </a>
+<li alt="200">Kapusta</li>
+<li alt="600">Ziemniaki</li>
+<li alt="430">Cebula</li>
+<li alt="330">Marchew</li>
+<li alt="150">Ogórki</li>
+<li alt="200">Pomidory</li>
+<li alt="250">Rzodkiewka</li>
+<li alt="400">Burak</li>
+<a id="gl">Chleb: <img src="http://hochukakdoma.com/uploads/product/100/170/4be991e6c1f32bd79d6359ffdfb22eae.jpg" width="40"></a>
+<li alt="2650">Chleb pszenny</li>
+<li alt="2100">Chleb żytni</li>
+<li alt="3000">Рieczywo</li>
+<a id="gl">Mięso i drób:  <img src="http://sensation-white.ru/wp-content/uploads/2016/10/22ae25e7f945b271e58a95b811d15ea8.jpg" width="40"></a>
+<li alt="3160">Jagnięcina</li>
+<li alt="3650">Szynka</li>
+<li alt="1800">Wołowina</li>
+<li alt="3000">Gęś</li>
+<li alt="1500">Indyk</li>
+<li alt="1150">Króliki</li>
+<li alt="1900">Kurczak</li>
+<li alt="3100">Wieprzowina</li>
+<li alt="4000">Kaczka</li>
+<a id="gl">Prod mleczne: <img src="http://ypitan.ru/wp-content/uploads/2016/03/dairy.jpg" width="40"> </a>
+<li alt="510">Jogurt (1.5%)</li>
+<li alt="470">Kefir (1.5%)</li>
+<li alt="600">Mleko (3%)</li>
+<li alt="1150">Śmietana (10%)</li>
+<li alt="2100">Śmietana (20%)</li>
+<li alt="3700">Ser twardy</li>
+<li alt="2260">Twaróg (18%)</li>
+<li alt="1570">Jajko kurze</li>
+<a id="gl">Ryby: <img src="http://static.wixstatic.com/media/7371c9_28a6d531e5c345768e3b89a108eff90b.jpg_srz_896_320_85_22_0.50_1.20_0.00_jpg_srz" width="60"> </a>
+<li alt="2400">Kawior ziarnisty</li>
+<li alt="750">Kalmar</li>
+<li alt="850">Krewetki</li>
+<li alt="1450">Karp</li>
+<li alt="800">Сzarniak</li>
+<li alt="950">Okoń</li>
+<li alt="160">Kapusta morska</li>
+<a id="gl">Кrupy: <img src="http://modelform.ru/wp-content/uploads/2016/06/kachestvo-krupy.jpg" width="60"> </a>
+<li alt="3400">Mąka</li>
+<li alt="3460">Kasza gryczana</li>
+<li alt="3400">Kasza manna</li>
+<li alt="3740">Kasza owsiana</li>
+<li alt="3420">Kasza jęczmienna</li>
+<li alt="3520">Kasza pszenna</li>
+<li alt="3430">Kasza pęczak</li>
+<li alt="3690">Płatki kukurydziane</li>
+<li alt="3500">Makarony</li>
+<li alt="0">Ryż</li>
+</ul></div></td>
+    <td id="blue"><div id="kal3" class="third_text">0</div>
+</div></td>
+    <td id="blue"><input type="text" id="massa3" width="100" onkeyup="checkCurr(this)" ></td> 
+	<td id="blue"><a id="cal3"> </a></td>
+  </tr>
+  
+  
+<tr>
+    <td><div class="four"><div id="btn"> </div><a>4. </a><span id="prod4">Wybierz z listy ↓</span></div>
+
+<ul class="four_list">
+<a id="gl">Owocy: <img src="http://zoozel.ru/gallery/images/511784_frukty-ovoschi-png.jpg" width="40"><a>
+<li alt="470">Morele</li>
+<li alt="440">Ananas</li>
+<li alt="450">Pomarańcza</li>
+<li alt="700">Winogrona</li>
+<li alt="250">Wiśnia</li>
+<li alt="300">Cytryna</li>
+<li alt="450">Jabłka</li>
+<a id="gl">Warzywa: <img src="http://вздоровье.рф/wp-content/uploads/2016/04/vegetables-pic.jpg" width="40"> </a>
+<li alt="200">Kapusta</li>
+<li alt="600">Ziemniaki</li>
+<li alt="430">Cebula</li>
+<li alt="330">Marchew</li>
+<li alt="150">Ogórki</li>
+<li alt="200">Pomidory</li>
+<li alt="250">Rzodkiewka</li>
+<li alt="400">Burak</li>
+<a id="gl">Chleb: <img src="http://hochukakdoma.com/uploads/product/100/170/4be991e6c1f32bd79d6359ffdfb22eae.jpg" width="40"></a>
+<li alt="2650">Chleb pszenny</li>
+<li alt="2100">Chleb żytni</li>
+<li alt="3000">Рieczywo</li>
+<a id="gl">Mięso i drób:  <img src="http://sensation-white.ru/wp-content/uploads/2016/10/22ae25e7f945b271e58a95b811d15ea8.jpg" width="40"></a>
+<li alt="3160">Jagnięcina</li>
+<li alt="3650">Szynka</li>
+<li alt="1800">Wołowina</li>
+<li alt="3000">Gęś</li>
+<li alt="1500">Indyk</li>
+<li alt="1150">Króliki</li>
+<li alt="1900">Kurczak</li>
+<li alt="3100">Wieprzowina</li>
+<li alt="4000">Kaczka</li>
+<a id="gl">Prod mleczne: <img src="http://ypitan.ru/wp-content/uploads/2016/03/dairy.jpg" width="40"> </a>
+<li alt="510">Jogurt (1.5%)</li>
+<li alt="470">Kefir (1.5%)</li>
+<li alt="600">Mleko (3%)</li>
+<li alt="1150">Śmietana (10%)</li>
+<li alt="2100">Śmietana (20%)</li>
+<li alt="3700">Ser twardy</li>
+<li alt="2260">Twaróg (18%)</li>
+<li alt="1570">Jajko kurze</li>
+<a id="gl">Ryby: <img src="http://static.wixstatic.com/media/7371c9_28a6d531e5c345768e3b89a108eff90b.jpg_srz_896_320_85_22_0.50_1.20_0.00_jpg_srz" width="60"> </a>
+<li alt="2400">Kawior ziarnisty</li>
+<li alt="750">Kalmar</li>
+<li alt="850">Krewetki</li>
+<li alt="1450">Karp</li>
+<li alt="800">Сzarniak</li>
+<li alt="950">Okoń</li>
+<li alt="160">Kapusta morska</li>
+<a id="gl">Кrupy: <img src="http://modelform.ru/wp-content/uploads/2016/06/kachestvo-krupy.jpg" width="60"> </a>
+<li alt="3400">Mąka</li>
+<li alt="3460">Kasza gryczana</li>
+<li alt="3400">Kasza manna</li>
+<li alt="3740">Kasza owsiana</li>
+<li alt="3420">Kasza jęczmienna</li>
+<li alt="3520">Kasza pszenna</li>
+<li alt="3430">Kasza pęczak</li>
+<li alt="3690">Płatki kukurydziane</li>
+<li alt="3500">Makarony</li>
+<li alt="0">Ryż</li>
+</ul></div></td>
+    <td id="blue"><div id="kal4" class="four_text">0</div>
+</div></td>
+    <td id="blue"><input type="text" id="massa4" width="100" onkeyup="checkCurr(this)" ></td> 
+	<td id="blue"><a id="cal4"> </a></td>
+  </tr>
+  
+  <tr>
+    <td><div class="five"><div id="btn"> </div><a>5. </a><span id="prod5">Wybierz z listy ↓</span></div>
+
+<ul class="five_list">
+<a id="gl">Owocy: <img src="http://zoozel.ru/gallery/images/511784_frukty-ovoschi-png.jpg" width="40"><a>
+<li alt="470">Morele</li>
+<li alt="440">Ananas</li>
+<li alt="450">Pomarańcza</li>
+<li alt="700">Winogrona</li>
+<li alt="250">Wiśnia</li>
+<li alt="300">Cytryna</li>
+<li alt="450">Jabłka</li>
+<a id="gl">Warzywa: <img src="http://вздоровье.рф/wp-content/uploads/2016/04/vegetables-pic.jpg" width="40"> </a>
+<li alt="200">Kapusta</li>
+<li alt="600">Ziemniaki</li>
+<li alt="430">Cebula</li>
+<li alt="330">Marchew</li>
+<li alt="150">Ogórki</li>
+<li alt="200">Pomidory</li>
+<li alt="250">Rzodkiewka</li>
+<li alt="400">Burak</li>
+<a id="gl">Chleb: <img src="http://hochukakdoma.com/uploads/product/100/170/4be991e6c1f32bd79d6359ffdfb22eae.jpg" width="40"></a>
+<li alt="2650">Chleb pszenny</li>
+<li alt="2100">Chleb żytni</li>
+<li alt="3000">Рieczywo</li>
+<a id="gl">Mięso i drób:  <img src="http://sensation-white.ru/wp-content/uploads/2016/10/22ae25e7f945b271e58a95b811d15ea8.jpg" width="40"></a>
+<li alt="3160">Jagnięcina</li>
+<li alt="3650">Szynka</li>
+<li alt="1800">Wołowina</li>
+<li alt="3000">Gęś</li>
+<li alt="1500">Indyk</li>
+<li alt="1150">Króliki</li>
+<li alt="1900">Kurczak</li>
+<li alt="3100">Wieprzowina</li>
+<li alt="4000">Kaczka</li>
+<a id="gl">Prod mleczne: <img src="http://ypitan.ru/wp-content/uploads/2016/03/dairy.jpg" width="40"> </a>
+<li alt="510">Jogurt (1.5%)</li>
+<li alt="470">Kefir (1.5%)</li>
+<li alt="600">Mleko (3%)</li>
+<li alt="1150">Śmietana (10%)</li>
+<li alt="2100">Śmietana (20%)</li>
+<li alt="3700">Ser twardy</li>
+<li alt="2260">Twaróg (18%)</li>
+<li alt="1570">Jajko kurze</li>
+<a id="gl">Ryby: <img src="http://static.wixstatic.com/media/7371c9_28a6d531e5c345768e3b89a108eff90b.jpg_srz_896_320_85_22_0.50_1.20_0.00_jpg_srz" width="60"> </a>
+<li alt="2400">Kawior ziarnisty</li>
+<li alt="750">Kalmar</li>
+<li alt="850">Krewetki</li>
+<li alt="1450">Karp</li>
+<li alt="800">Сzarniak</li>
+<li alt="950">Okoń</li>
+<li alt="160">Kapusta morska</li>
+<a id="gl">Кrupy: <img src="http://modelform.ru/wp-content/uploads/2016/06/kachestvo-krupy.jpg" width="60"> </a>
+<li alt="3400">Mąka</li>
+<li alt="3460">Kasza gryczana</li>
+<li alt="3400">Kasza manna</li>
+<li alt="3740">Kasza owsiana</li>
+<li alt="3420">Kasza jęczmienna</li>
+<li alt="3520">Kasza pszenna</li>
+<li alt="3430">Kasza pęczak</li>
+<li alt="3690">Płatki kukurydziane</li>
+<li alt="3500">Makarony</li>
+<li alt="0">Ryż</li>
+</ul></div></td>
+    <td id="blue"><div id="kal5" class="five_text">0</div>
+</div></td>
+    <td id="blue"><input type="text" id="massa5" width="100" onkeyup="checkCurr(this)" ></td> 
+	<td id="blue"><a id="cal5"> </a></td>
+  </tr> 
+   <tr>
+    <td id="puste"><input id="button" type="button" value="Przelicz" onclick="one()"></td> 
+    <td id="puste"><input id="button" type="button" value="Anuluj" onclick="anuluj()"> <input id="button" type="button" value="Download" onclick="download()"></td> 
+    <td id="massakonc">Razem: </td>	
+	<td id="kalkonc">Razem: </td>
+  </tr>
+</table>
+<br>
+
+</body>
+</html>
